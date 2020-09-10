@@ -1,24 +1,21 @@
 sudo: false
 language: erlang
 otp_release:
-    - 17.1
-    - 17.3
-    - 17.4
-    - 17.5
-    - 18.0
-    - 18.1
-    - 18.2
-    - 18.3
     - 19.0
-    - 19.1
-    - 19.2
+    #- 19.1
+    #- 19.2
     - 19.3
     - 20.0
     - 20.1
-    - 20.2
+    #- 20.2
     - 20.3
     - 21.0
     - 21.1
     - 21.2
     - 21.3
-script: RUNNING_ON_TRAVIS=yes make test
+    - 22.0
+    - 22.1
+    - 22.2
+    - 22.3
+    - 23.0
+script: RUNNING_ON_CI=yes make test
